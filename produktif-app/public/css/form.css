@@ -1,0 +1,120 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+}
+
+
+main {
+    max-width: 600px;
+    margin: 7% auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+form fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#cancel{
+    width: 20%;
+    margin-top: 1em;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 8%;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    main {
+        max-width: 90%;
+        margin: 20% auto;
+        padding: 20px;
+    }
+    
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="text"],
+    form textarea {
+        width: 100%;
+    }
+    
+    form input[type="submit"],
+    #cancel {
+        width: 100%;
+    }
+}

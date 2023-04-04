@@ -1,0 +1,219 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 10%;
+}
+
+header #logout{
+  padding: 10px;
+  float: right;
+  width: 10em;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #d73a3a 0,
+    hsl(0, 56%, 45%) 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+}
+
+#logout:hover {
+  box-shadow: rgba(225, 46, 46, 0.35) 0 -25px 18px -14px inset,
+    rgba(208, 47, 47, 0.25) 0 1px 2px, rgba(216, 27, 27, 0.25) 0 2px 4px,
+    rgba(205, 31, 31, 0.25) 0 4px 8px, rgba(240, 38, 38, 0.25) 0 8px 16px,
+    rgba(186, 40, 40, 0.25) 0 16px 32px;
+  transform: scale(1) rotate(-1deg);
+}
+
+#logout:active {
+  box-shadow: #e83030 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+main {
+  max-width: 600px;
+  margin: 7% auto;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 10px;
+  width: 400px;
+  display: block;
+}
+
+.profiles p {
+  margin: 0;
+}
+
+.update{
+    position: relative;
+    top: -350px;
+}
+
+button {
+  width: 420px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(29, 26, 26);
+  font-weight: bold;
+  transform: translateY(4px);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    hsl(233, 100%, 66%) 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(44, 149, 187, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 180, 0.25) 0 1px 2px, rgba(44, 187, 170, 0.25) 0 2px 4px,
+    rgba(44, 187, 161, 0.25) 0 4px 8px, rgba(44, 187, 180, 0.25) 0 8px 16px,
+    rgba(44, 168, 187, 0.25) 0 16px 32px;
+  transform: scale(1) rotate(-1deg);
+}
+
+button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+form fieldset legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea{
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    max-width: 90%;
+    margin: 15% auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 60px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+  main {
+    max-width: 90%;
+    margin: 40% auto;
+    padding: 20px;
+  }
+
+  span {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+  }
+
+  .profiles p {
+    margin: 0;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(29, 26, 26);
+    font-weight: bold;
+    transform: translateY(4px);
+    background-image: radial-gradient(
+      100% 100% at 100% 0,
+      #5adaff 0,
+      #5468ff 100%
+    );
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+      rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  }
+}
